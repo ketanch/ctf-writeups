@@ -1,6 +1,7 @@
 # **Crypto CTF 2020**  
 ## Amsterdam  
-### Category : Easy, Points : 55  
+### Category : Easy, Points : 55
+### Flag : CCTF{With_Re3p3ct_for_Sch4lkwijk_dec3nt_Encoding!}
 Challenge :  
 amsterdam.py
 ```
@@ -108,5 +109,6 @@ Using all this knowledge we can represent msg as:
 All now left is to find the initial k.  
 From the lsb knowledge of **m**, comb(0,k) is 0 if k is positive which means if at last k>=1,  
 **msg (which is 0) < comb(0,k) = 0**, <--CONTRADICTION  
-So at last k becomes 0, which means k in the first term of msg i.e. comb(5,k) would be 1, as after it it will decrease by 1 and finally become 0 to satisfy our lsb condition.  
-Full solution is avaliable at ams_soln.py
+So at last k becomes 0, which means k in the first term of msg i.e. comb(5,k) would be 1, as after it it will decrease by 1 and finally become 0 to satisfy our lsb condition. 
+
+Full solution is avaliable at [ams_soln.py](https://github.com/ketanch/ctf-writeups/blob/master/Crypto%20CTF%202020/ams_sol.py)
