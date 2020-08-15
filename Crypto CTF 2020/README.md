@@ -161,9 +161,8 @@ We cannot find p,q,r but we can do some tricks to reduce the modulus from **N** 
 *enc = m<sup>65537</sup> mod N*  
 
 As p+q+r is a factor of N, we can reduce above expression to:  
-lets say n = (p+q+r), then:  
 
-*enc mod n = m<sup>65537</sup> mod n*  
+*enc = m<sup>65537</sup> mod (p+q+r)*  
 
 As n is also prime ( given in question ), its totient is simply n-1 :  
 
@@ -180,4 +179,5 @@ e = 65537
 d = invert(e,phi)
 flag = long_to_bytes(pow(enc,d,n)).decode()
 print(flag)
-```
+```  
+Instead of using (p+q+r) as modulus, we could have also used pqr, but then the totient would be (p-1) x (q-1) x (r-1), which we do not know.
