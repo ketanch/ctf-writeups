@@ -164,15 +164,15 @@ As p+q+r is a factor of N, we can reduce above expression to:
 
 *enc = m<sup>65537</sup> mod (p+q+r)*  
 
-As n is also prime ( given in question ), its totient is simply n-1 :  
+As p+q+r is also prime ( given in question ), its totient is simply p+q+r-1 :  
 
-*phi = n-1 = p+q+r-1*  
+*phi = p+q+r-1*  
 
 Now we can compute flag easily:  
 ```
 from Crypto.Util.number import *
 from gmpy2 import invert
-n = pubkey[1]
+n = pubkey[1]      #new modulus
 enc = enc % n
 phi = n-1
 e = 65537
