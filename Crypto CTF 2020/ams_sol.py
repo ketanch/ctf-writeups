@@ -39,18 +39,3 @@ for i in pos:
 	msg += comb(i,k)
 	k += 1
 print(long_to_bytes(msg))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
