@@ -56,4 +56,4 @@ Factor **_product** using [factordb.com](http://factordb.com/index.php) and voil
 >2199766062441797577302949884026507797060867827397893 = 132788897400365081<sup>2</sup> \* 124753565845126613  
 
 As we have **x1** and **x2**, calculate primes and eventually flag.  
-Full solution is avaliable at [shh.py](https://github.com/ketanch/ctf-writeups/blob/master/Crypto%20CTF%202020/ams_sol.py)
+Full solution is avaliable at [shh.py](https://github.com/ketanch/ctf-writeups/blob/master/Fword%20CTF/shh.py)
