@@ -13,7 +13,7 @@ p = nextprime(func(x1,bits))
 q = nextprime(func(x2,bits))
 assert n == p**2 * q
 #Now you can either use Schmidt-Samoa for decryption or use what I did
-#Assuming message < q, we can reduce c (mod n) to c (mod q)
+#Assuming message < q, we can reduce c (mod n) to c (mod q) [This is possible because q is a factor of n]
 c2 = c % q
 d = invert(n, q-1)
 m = pow(c2, d, q)
